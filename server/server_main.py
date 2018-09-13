@@ -18,6 +18,8 @@ def _set(state=False):
     else:
         STATE = False
 
+    return str(STATE)
+
 
 http_server = WSGIServer(('', 5020), app)
 http_server.serve_forever()
